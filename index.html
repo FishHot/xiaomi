@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet/less" href="./less/index.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <header id="header">
+            <div class="top">
+                <a href="" class="logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAyCAYAAAD2vz2aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjQ2OUE2MkU0RTQ4MTFFNzgxOTZBRDJFQjk4Qjk0NjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjQ2OUE2MkY0RTQ4MTFFNzgxOTZBRDJFQjk4Qjk0NjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOUQ0QkM2RjREQ0MxMUU3ODE5NkFEMkVCOThCOTQ2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOUQ0QkM3MDREQ0MxMUU3ODE5NkFEMkVCOThCOTQ2NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiL8gcIAAAF1SURBVHja7Ju/LwRRFEbf+FVsQ0dBdJKNSksUSqVCr6AhKxGVwn+gVUpQEI1So5XoZUOhEbKMDiESIeOTzPbvzpoxz5wvOd3duzsn++7cSXajZMU9OOeGXPmTiHtxIU7FoYh/oe+ZmPKsjSMJS1yY+RS7YrNDcTdi1Le4y4WbHrEorsRcUW8asrB2BsSxWEeYLVtiCWG2bIsJhPmnV+zkeV3/TZhLv2HzCLNlFWG2TIqRvHYZa97FR84XXEvnUSeZEft/LexZDIvXnIVFop6uCQ3RnaHHeBmO5FMBstrPjZdiTUyLlww9Bqs6w87FcobX9Vd56B+IZoZjXVlhP0f0qAwfJKS1ookw+w0HYaEFYQVs+j4ZE7Oed6o3sVfA00OphW2IBUN9S5xU+Uhad6A+ZhhDnyAMYQhDGMIQRhCGMIQhDGEEYQhDGMIQhjCCMIQhDGEIIwhDWFHCLP81vPOsezT0/BK3nj0tP1i59qxrGXrG3wIMAK5yNsqRAjAyAAAAAElFTkSuQmCC"
+                        alt="">
+                </a>
+                <form class="form-search" action="#">
+                    <input class="search" type="search" placeholder="搜索商品名称">
+                </form>
+                <a href="" class="logoin">
+                    <i></i>
+                </a>
+            </div>
+            <div class="subnav">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <ul class="swiper-slide">
+                            <li class="active">
+                                <a href="#">推荐</a>
+                            </li>
+                            <li>
+                                <a href="#">手机</a>
+                            </li>
+                            <li>
+                                <a href="#">电视</a>
+                            </li>
+                            <li>
+                                <a href="#">智能</a>
+                            </li>
+                            <li>
+                                <a href="#">笔记本</a>
+                            </li>
+                            <li>
+                                <a href="#">家用</a>
+                            </li>
+                            <li>
+                                <a href="#">新款游戏本</a>
+                            </li>
+                            <li>
+                                <a href="#">双摄</a>
+                            </li>
+                            <li>
+                                <a href="#">全面屏</a>
+                            </li>
+                            <li>
+                                <a href="#">生活周边</a>
+                            </li>
+                            <li>
+                                <a href="#">盒子</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section id="mi6">
+            <img src="//i8.mifile.cn/v1/a1/a07f64f3-d477-81c5-4f37-a45251cf1435!720x360.webp" alt="">
+        </section>
+        <!-- 导航栏 -->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 热门商品 -->
+        <section id="hotgoods">
+            <div class="hotgoods-top">
+                <div class="hotgoods-tl">
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/c897c4a6-9b16-8476-53c1-d53ed978eef0!358x508.webp" alt="">
+                    </a>
+                </div>
+                <div class="hotgoods-tr">
+                    <a href="#" class="bb">
+                        <img src="//i8.mifile.cn/v1/a1/6634c877-77ad-3a84-80f7-d150754b4b54!358x252.webp" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="//i8.mifile.cn/v1/a1/f555d958-35a6-c19a-eedd-ec7203c0259f!358x252.webp" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="hotgoods-bottom">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/0e2ff8b1-1ccc-bcb0-096a-391002935afe!720x280.webp" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- 超值推荐 -->
+        <section id="super" class="goods">
+            <div class="super-title bb">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/3ec92a36-f85a-476b-cd61-dbd35d6af2ca!720x440.webp" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6!360x360.webp" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3ba9490bd6d7dec5d29e45435692b4fe.jpg?thumb=1&w=360&h=360" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3ba9490bd6d7dec5d29e45435692b4fe.jpg?thumb=1&w=360&h=360" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/685330bb-cb82-c3c3-e3cf-106c9b9a70e6!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3ba9490bd6d7dec5d29e45435692b4fe.jpg?thumb=1&w=360&h=360" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-air">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/e97a0c6a-12a3-f20c-3a17-a9043f1c1019!720x280.webp" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- 电视 -->
+        <section id="mi-tv" class="goods">
+            <div class="super-title bb">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/57e1324d-40ec-a9cc-75de-5d70c42d2252!720x440.webp" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5014d1a59bf76ae55d79fe930c8de7f4.jpg?thumb=1&w=360&h=360" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/d342ccbf-e3d6-2dcc-47a3-18656f28a0cc!360x360.webp" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/9d1994f2-0dac-d9cc-5102-0b0c6752210c!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/c0d2639f-af0d-69c4-1290-a807bc549e48!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-more">
+                <a href="#">
+                    更多小米电视产品 >
+                </a>
+            </div>
+            <div class="super-air">
+                <a href="#">
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/cf717954aef0a8b0de3c32daa1100825.jpg?thumb=1&w=720&h=280" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- 明星单品 -->
+        <section id="star-product" class="goods">
+            <div class="super-title bb">
+                <a href="#">
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3c9dd770b055e6e86b88cb673f2f22ba.jpg?thumb=1&w=720&h=440" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05d59f494c122b81d737a22e9125b89a.jpg?thumb=1&w=360&h=360" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3a6c559209103e17ef6acaf583929a28.jpg?thumb=1&w=360&h=360" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ffe8610a808d8254fb5d37b141d0bf5f.jpg?thumb=1&w=360&h=360" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/0518c80c-a1a5-af45-0898-a4e07b3d5a9f!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/360d4fc7-9424-b65d-3fb7-097748f5dff8!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e8bb9149f581b54ef7d9121217f56717.jpg?thumb=1&w=360&h=360" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/8e7dc797-6746-7467-d87b-932f7be41425.webp?w=180&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米平板4</h3>
+                                <p class="long-time">
+                                    <span>超长续航,骁龙660AIE</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-air">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/79522738-bd19-d4cc-ebfc-ff73fac87172!720x280.webp" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- 新品上线 -->
+        <section id="new-online" class="goods">
+            <div class="super-title bb">
+                <a href="#">
+                    <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c9923b4d7a35e5ce691ace43c88f07a4.jpg?thumb=1&w=720&h=440" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/84afcca8-cafd-bef6-c93b-724bd05528d3!360x360.webp" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/0fd67d28-c7a3-921e-328f-ca8ead68a26b!360x360.webp" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/887ab2bb-abea-99b9-423c-d42a1bd37b50!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/289039eb-c3ed-7c26-69c3-5b07b72a797d.webp?w=120&h=48" alt="">
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ef098f1a6876f2ea75611ad97527c89d.jpg?thumb=1&w=360&h=360" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/289039eb-c3ed-7c26-69c3-5b07b72a797d.webp?w=120&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/8248dbb0-5e04-81f7-2c0d-7ffb4d3191eb!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/289039eb-c3ed-7c26-69c3-5b07b72a797d.webp?w=120&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/cf13e34e-1f5d-9b3d-d793-ea3db41240c7!360x360.webp" alt="">
+                            <img class='icon-img' src="//i8.mifile.cn/v1/a1/289039eb-c3ed-7c26-69c3-5b07b72a797d.webp?w=120&h=48" alt="">
+
+                            <div class="product-info">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-more">
+                <a href="#">
+                    更多新品 >
+                </a>
+            </div>
+            <div class="super-air">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/140a21ef-5fba-17c8-a927-8916d357bf69!720x280.webp" alt="">
+                </a>
+            </div>
+        </section>
+        <!-- 米家智能 -->
+        <section id="intelligence" class="goods">
+            <div class="super-title bb">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/cd7c43bc-6edf-ea59-1b93-8b849b0a834d!720x440.webp" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/77570ffe-db66-7a1a-4fb4-63683591794e!360x360.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product-info product-intel">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product-info product-intel">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/44f2d298-35cc-dac9-fda6-e680c20aeda4!360x360.webp" alt="">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a8d3a4fea422bd6026efb4b0fb789cb4.jpg?thumb=1&w=360&h=360" alt="">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product-info product-intel">
+                                <h3 class="pad">小米电视4A 50英寸</h3>
+                                <p class="long-time">
+                                    <span>4K HDR，人工智能语音系统</span>
+                                </p>
+                                <p class="price">¥1099起</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-more">
+                <a href="#">
+                    更多米家智能产品 >
+                </a>
+            </div>
+        </section>
+        <!-- 分类 -->
+        <sectiion id="type" class="goods" style="margin: 10px 0;">
+            <div class="super-title bb" style="margin-bottom: 5px">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/8b845795-f1be-9d71-cae6-cbbfe1045fea!720x280.webp" alt="">
+                </a>
+            </div>
+            <div class="super-products">
+                <ul>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/46c44f3e-479d-a999-dd2d-98fb39b51e17!358x480.webp" alt="">
+                        </a>
+                    </li>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/f938ae9f-e54a-1fa1-a52d-62dfe534b579!358x480.webp" alt="">
+
+                        </a>
+                    </li>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/1a8f5c31-f50c-5be0-3df0-f2c5c839e345!358x480.webp" alt="">
+
+                        </a>
+                    </li>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/8cfcd654-4af5-9ae6-c6cc-1ba9d28be8e8!358x480.webp" alt="">
+
+                        </a>
+                    </li>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/52866372-7fe5-76c2-29a0-9ae32d07b8ff!358x480.webp" alt="">
+                        </a>
+                    </li>
+                    <li class="mb">
+                        <a href="#">
+                            <img src="//i8.mifile.cn/v1/a1/d55778b9-7144-2d36-1450-694b8a47b9db!358x480.webp" alt="">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="super-air">
+                <a href="#">
+                    <img src="//i8.mifile.cn/v1/a1/33720799-ef9d-e045-6ddd-73927bc2db4a!720x280.webp" alt="">
+                </a>
+            </div>
+            <div class="super-more" style="padding-bottom: 54px">
+                <a href="#" style="border: 0">
+                    <img style="width: 100%;" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bbb5bac8089d890338b5bf8ff742cbbc.png?thumb=1&w=720&h=106"
+                        alt="">
+                </a>
+            </div>
+        </sectiion>
+        <!-- 页脚 -->
+        <footer id="footer">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <i class="icon-home "></i>
+                        <p>
+                            <span>首页</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-type"></i>
+                        <p>
+                            <span>分类</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-car"></i>
+                        <p>
+                            <span>购物车</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-own"></i>
+                        <p>
+                            <span>我的</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
